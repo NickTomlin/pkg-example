@@ -22,9 +22,20 @@ npm run pkg
 
 ```
 
+Publishing
+---
+
+This uses travis's [github release](https://docs.travis-ci.com/user/deployment/releases/) integration to build and publish executables to the repo's release page. See [.travis.yml](.travis.yml) for setup.
+
+To cut a new release:
+
+- Create a new tag `git tag x.x.x`
+- Push that tag `git push orign x.x.x`
+- Sit back and watch the travis build complete and finish the release
+
 Todo
 ---
 
 - [x] Make it work
-- [ ] Example of automating releases via travis
+- [x] Example of automating releases via travis
 - [ ] Test windows
