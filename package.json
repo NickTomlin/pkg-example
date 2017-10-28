@@ -1,0 +1,16 @@
+{
+  "name": "pkg-example",
+  "version": "1.0.0",
+  "description": "An example of using pkg to bundle up an interactive CLI",
+  "main": "index.js",
+  "scripts": {
+    "pkg": "pkg index.js --out-path out"
+  },
+  "keywords": [],
+  "author": "Nick Tomlin <nick.tomlin@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "inquirer": "^3.3.0"
+  }
+}
