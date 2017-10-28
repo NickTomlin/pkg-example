@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - 8
-before_deploy: npm run pkg
+before_deploy: npm i pkg && npm run pkg
 deploy:
   provider: releases
   api_key:
