@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 8
+deploy:
+  provider: releases
+  api_key:
+    secure: F5FusyXdFvGMip8CL4Ecfxs2mlF1uM+Lk00a/Jvg6JfhHte3swqwFt3/Jk7TV27DZPr6msrcP6iT4uedvVzFIqw6fzym54aEDdDbGR0XGtMBVv18T3SM543UFzbLbarn9MUK/xYJMqve/enrrutrz0sG2ZCEUGU7Zk7i55Sk52iXyVQsJKsmWPe65ABXd3TGrp6oneh3d2XPVTJEHHdGK37ynxnBU7ct77BIjJJsMQt90m77BuXCPTMotM9Y03/LTpGT7EfHjOe6+p08+UBmHGQIC8go4/At+rRbKaCvd8pwn1aBR2oY0cxi1qvi9OX5xKt1u294MR7CLC4IoBzLJ45jr/GrE6asaORdoFdav0mOKioKJh8DawCmcFWDfoFZANDLM1O+bK4BzCdOpNvspHZZ5dLxSQOW9TZdIuQsJP/Xn7LgJEPlnhsqta+2/oG6Eh+rR691IjY/++uq18c5/nqUduOJaV7KuGzERSp3NQ2hkGJw5t0c4bDJf6mHaJEeQoodt/WOVIkFCUwYFZDuiF8n8fFdtf4Y29FgbfpZkuni1cqNvnh0u9UrLT2ZUMSD9zbs+Qfau2LEjIio4RjP/LiKEMbpowN6wDg/Wz9U4dfds+byOQA9KZPG1iEncwY7vjElP1uepti1gk+kxpvsLb7zgH3hLS7SPtC6TUmNx6A=
+  file_glob: true
+  file: out/*
+  skip_cleanup: true
+  overwrite_files: true
+  on:
+    tags: true
