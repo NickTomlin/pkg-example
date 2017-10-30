@@ -1,7 +1,7 @@
 pkg example
 ---
 
-This is a simple example demonstrating the use of [pkg](https://github.com/NickTomlin/pkg-example/releases/download/latest/index-macos) to bundle an interactive CLI for macos, linux, and windows.
+This is a simple example demonstrating the use of [pkg](https://github.com/zeit/pkg) to bundle an interactive CLI for macos, linux, and windows.
 
 Usage
 ---
